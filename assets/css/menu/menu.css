@@ -1,0 +1,32 @@
+.menu {
+    background-color: var(--branco);
+    display: none;
+    padding-left: 1.5rem;
+    padding-top: 1.75rem;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 70%;
+}
+
+.cabecalho__menu:checked ~ .menu {
+    display: block;
+    z-index: 99;
+}
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        left: auto;
+        padding: 0;
+        top: 64px;
+        transform: translateX(-75px);
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .menu {
+        left: 0;
+        transform: translateX(343px);
+    }
+}

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,54 +11,43 @@
 </head>
 
 <body>
-
-    <header class="cabeçalho">
-        <div class="container">
-            <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu" class="container__rotulo">
-                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
-            </label>
-            <ul class="lista-menu">
-                <li class="lista-menu__titulo">Categorias</li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Programação</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Front-end</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Infraestrutura</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Business</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Design & UX</a>
-                </li>
+    <header class="cabecalho">
+        <input type="checkbox" id="menu" class="cabecalho__menu">
+        <label for="menu" class="cabecalho__menu-botao">
+            <img src="assets/img/Menu.svg" alt="Barra de Menu" class="cabecalho__menu-icone">
+        </label>
+        <nav class="menu">
+            <h3 class="menu__titulo">Categorias</h3>
+            <ul class="menu__lista">
+                <li class="menu__item"><a href="#">Programação</a></li>
+                <li class="menu__item"><a href="#">Front-end</a></li>
+                <li class="menu__item"><a href="#">Infraestrutura</a></li>
+                <li class="menu__item"><a href="#">Business</a></li>
+                <li class="menu__item"><a href="#">Design & UX</a></li>
             </ul>
-            <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
-            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
-        </div>
-
-        <ul class="opções">
-            <input type="checkbox" id="opções-menu" class="opções__botão">
-            <li class="opções__item"><a href="#" class="opções__link">Categorias</a></li>
-            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
-            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+        </nav>
+        <img src="assets/img/Logo.svg" alt="Logo do AluraBooks" class="cabecalho__logo">
+        <h1 class="cabecalho__titulo"><strong class="cabecalho__titulo--negrito">Alura</strong>Books</h1>
+        <ul class="cabecalho__opcoes opcoes">
+            <li class="opcoes__item opcoes__item-botao">
+                <label for="menu">Categorias</label>
+            </li>
+            <li class="opcoes__item">
+                <a href="#">Favoritos</a>
+            </li>
+            <li class="opcoes__item">
+                <a href="#">Minha estante</a>
+            </li>
         </ul>
-
-        <div class="container">
-            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
-                    class="container__imagem container__imagem-transparente"></a>
-            <a href="#" class="container__link">
-                <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
-                <p class="container__texto">Minha sacola</p>
-            </a>
-            <a href="#" class="container__link">
-                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
-                <p class="container__texto">Meu perfil</p>
-            </a>
-        </div>
+        <a href="#" class="cabecalho__icone cabecalho__icone--favoritos">
+            <img src="assets/img/Favoritos.svg" alt="Meus favoritos">
+        </a>
+        <a href="#" class="cabecalho__icone cabecalho__icone--compras">
+            <img src="assets/img/Compras.svg" alt="Carrinho de compras">
+        </a>
+        <a href="#" class="cabecalho__icone cabecalho__icone--usuario">
+            <img src="assets/img/Usuario.svg" alt="Meu perfil">
+        </a>
     </header>
 
     <section class="banner">

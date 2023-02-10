@@ -1,0 +1,18 @@
+.cabecalho__titulo {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .cabecalho__titulo {
+        display: block;
+        font-family: var(--fonte-secundaria);
+        font-size: 1.875rem;
+        grid-area: titulo;
+        place-self: end;
+    }
+    
+    .cabecalho__titulo--negrito {
+        font-weight: 700;
+    }
+}

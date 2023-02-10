@@ -1,0 +1,17 @@
+.opcoes__item {
+    color: var(--preto);
+    cursor: pointer;
+    line-height: 24px;
+    margin: 0 0.625rem;
+    padding: 0.625rem;
+    text-transform: uppercase;
+}
+
+.opcoes__item > label {
+    cursor: pointer;
+}
+
+.cabecalho__menu:checked ~ .opcoes > .opcoes__item-botao {
+    background: var(--azul-degrade);
+    color: var(--branco);
+}

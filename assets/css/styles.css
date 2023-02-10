@@ -1,3 +1,15 @@
+@import url('../css/cabecalho/cabecalho.css');
+@import url('../css/cabecalho/cabecalho-menu.css');
+@import url('../css/cabecalho/cabecalho-logo.css');
+@import url('../css/cabecalho/cabecalho-titulo.css');
+@import url('../css/cabecalho/cabecalho-icone.css');
+@import url('../css/cabecalho/opcoes.css');
+@import url('../css/cabecalho/opcoes-item.css');
+
+@import url('../css/menu/menu.css');
+@import url('../css/menu/menu-titulo.css');
+@import url('../css/menu/menu-lista.css');
+@import url('../css/menu/menu-item.css');
 
 
 
@@ -13,7 +25,7 @@
 
 
 
-@import url("../../styles/header.css");
+/* @import url("../../styles/header.css"); */
 @import url("../../styles/banner.css");
 @import url("../../styles/formulario.css");
 @import url("../../styles/rodape.css");
@@ -35,10 +47,29 @@
     --vermelho: #D94937;
 
     --fonte-principal: 'Poppins', sans-serif;
-    --fonte-secundario: 'Josefin Sans';
+    --fonte-secundaria: 'Josefin Sans';
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--branco);
     font-family: var(--fonte-principal);
+}
+
+a {
+    color: var(--preto);
+    text-decoration: none;
+}
+
+input {
+	outline: none;
+	border:none;
+	background-image:none;
+	background-color:transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }

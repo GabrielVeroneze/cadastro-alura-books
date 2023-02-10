@@ -1,0 +1,9 @@
+.menu__lista {
+    margin-top: 1.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .menu__lista {
+        margin: 0;
+    }
+}

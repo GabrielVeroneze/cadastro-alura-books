@@ -1,0 +1,36 @@
+.cabecalho__icone--favoritos {
+    grid-area: favoritos;
+}
+
+.cabecalho__icone--compras {
+    grid-area: compras;
+}
+
+.cabecalho__icone--usuario {
+    grid-area: usuario;
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__icone--favoritos {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .cabecalho__icone--compras, 
+    .cabecalho__icone--usuario {
+        align-items: center;
+        display: flex;
+        font-size: 1.25rem;
+    }
+
+    .cabecalho__icone--compras::after {
+        content: 'Minha sacola';
+        margin-left: 0.5rem;
+    }
+
+    .cabecalho__icone--usuario::after {
+        content: 'Meu perfil';
+        margin-left: 0.5rem;
+    }
+}

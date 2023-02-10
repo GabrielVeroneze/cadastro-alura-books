@@ -1,0 +1,25 @@
+.cabecalho {
+    background-color: var(--branco);
+    display: grid;
+    grid-template-columns: 80px 72px 1fr 56px 56px 56px;
+    grid-template-areas: 
+        "menu logo . favoritos compras usuario";
+    padding-right: 1.25rem;
+    place-items: center;
+    height: 80px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        grid-template-columns: 40px 167px 1fr 38px 60px 32px;
+        grid-template-areas:
+            'logo titulo opcoes compras . usuario';
+        padding: 1.25rem 5rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .cabecalho {
+        grid-template-columns: 40px 167px 1fr max-content 60px max-content;
+    }
+}
