@@ -1,0 +1,10 @@
+.lista-rodape__link {
+    color: var(--cinza-escuro);
+    cursor: pointer;
+    display: block;
+    font-size: 0.875rem;
+}
+
+.lista-rodape__link:hover {
+    color: var(--laranja);
+}

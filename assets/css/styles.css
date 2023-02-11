@@ -25,20 +25,14 @@
 @import url('../css/formulario/formulario-select.css');
 @import url('../css/formulario/formulario-botao.css');
 
+@import url('../css/rodape/rodape.css');
+@import url('../css/rodape/rodape-titulo.css');
+@import url('../css/rodape/listaRodape.css');
+@import url('../css/rodape/listaRodape-titulo.css');
+@import url('../css/rodape/listaRodape-item.css');
+@import url('../css/rodape/listaRodape-imagem.css');
+@import url('../css/rodape/listaRodape-link.css');
 
-
-
-
-
-
-
-
-
-
-
-
-@import url("../../styles/formulario.css");
-@import url("../../styles/rodape.css");
 @import url("../../styles/cadastro.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
@@ -84,6 +78,9 @@ input {
 	box-shadow: none;
 }
 
+hr {
+    margin: 0;
+}
 
 /* .formulario__erro {
     display: flex;

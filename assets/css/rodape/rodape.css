@@ -1,0 +1,18 @@
+.rodape {
+    background-color: var(--branco);
+    padding: 1.125rem 1.5rem 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 3.5rem 1.5rem 4.375rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .rodape {
+        padding: 3.5rem 13.5vw 3.5rem 12.5vw;
+    }
+}
