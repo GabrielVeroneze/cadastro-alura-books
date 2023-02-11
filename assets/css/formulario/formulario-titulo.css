@@ -1,0 +1,7 @@
+.formulario__titulo {
+    color: var(--azul);
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 2rem;
+}

@@ -15,6 +15,15 @@
 @import url('../css/banner/banner-titulo.css');
 
 @import url('../css/principal/principal.css');
+@import url('../css/principal/principal-titulo.css');
+@import url('../css/formulario/formulario.css');
+@import url('../css/formulario/formulario-titulo.css');
+@import url('../css/formulario/formulario-campo.css');
+@import url('../css/formulario/formulario-campoDuplo.css');
+@import url('../css/formulario/formulario-label.css');
+@import url('../css/formulario/formulario-input.css');
+@import url('../css/formulario/formulario-select.css');
+@import url('../css/formulario/formulario-botao.css');
 
 
 
@@ -74,3 +83,25 @@ input {
 	-moz-box-shadow: none;
 	box-shadow: none;
 }
+
+
+/* .formulario__erro {
+    display: flex;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+
+.erro__imagem {
+    width: 16px;
+    height: 16px;
+    margin: 0 .5em;
+    background-image: url('../img/warning.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.erro__texto {
+    font-size: 0.75rem;
+    line-height: 18px;
+    color: var(--vermelho);
+} */

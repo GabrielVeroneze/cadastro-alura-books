@@ -1,0 +1,11 @@
+.formulario__botao {
+    align-self: end;
+    background: var(--laranja);
+    border: none;
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 1rem 4rem;
+}

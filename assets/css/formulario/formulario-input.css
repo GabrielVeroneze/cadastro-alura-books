@@ -1,0 +1,7 @@
+.formulario__input {
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    font-family: var(--fonte-principal);
+    padding: 0.625rem 1rem;
+    width: 100%;
+}
