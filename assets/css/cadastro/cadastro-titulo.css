@@ -1,0 +1,6 @@
+.cadastro__titulo {
+    color: var(--laranja);
+    font-size: 1.625rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}

@@ -33,7 +33,11 @@
 @import url('../css/rodape/listaRodape-imagem.css');
 @import url('../css/rodape/listaRodape-link.css');
 
-@import url("../../styles/cadastro.css");
+@import url('../css/cadastro/cadastro.css');
+@import url('../css/cadastro/cadastro-titulo.css');
+@import url('../css/cadastro/cadastro-subtitulo.css');
+@import url('../css/cadastro/cadastro-imagem.css');
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
@@ -64,8 +68,8 @@ body {
 }
 
 a {
-    color: var(--preto);
-    text-decoration: none;
+    all: unset;
+    cursor: pointer;
 }
 
 input {
