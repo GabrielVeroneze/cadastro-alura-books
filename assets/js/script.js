@@ -1,7 +1,3 @@
-console.log('Mensagem 1!')
+var consultaCep = fetch('viacep.com.br/ws/01001000/json/')
 
-setTimeout(() => {
-    console.log('Mensagem 2!')
-}, 0)
-
-console.log('Mensagem 3!')
+console.log(consultaCep)
