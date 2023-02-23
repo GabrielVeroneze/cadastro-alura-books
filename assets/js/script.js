@@ -13,12 +13,3 @@ async function buscaEndereco(cep) {
         return erro
     }
 }
-
-
-let listaCep = ['01001000', '01001001', '99999999', '111111111']
-
-let resultadoCep = listaCep.map(cep => {
-    return buscaEndereco(cep)
-})
-
-Promise.all(resultadoCep).then(respostas => console.log(respostas))
