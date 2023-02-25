@@ -1,19 +1,9 @@
 const cep = document.querySelector('#cep')
-var endereco = document.querySelector('#endereco')
-var numero = document.querySelector('#numero')
-var complemento = document.querySelector('#complemento')
-var bairro = document.querySelector('#bairro')
-var cidade = document.querySelector('#cidade')
-var estado = document.querySelector('#estado')
 
-
-cep.addEventListener('focusout', async () => {
-
+cep.addEventListener('focusout', async () => {   
     const dados = await buscaEndereco(cep.value)
-
     manipulaDados(dados)
 })
-
 
 async function buscaEndereco(cep) {
     try {
@@ -23,31 +13,37 @@ async function buscaEndereco(cep) {
         if(cepConvertido.erro) {
             throw Error('CEP não existente!')
         }
-        // console.log(cepConvertido)
         
         return cepConvertido
     } catch (erro) {
-        // console.log(erro)
         return erro
     }
 }
 
-
 function manipulaDados(dados) {
-    console.log(dados)
-    endereco.value = dados.logradouro
+    const endereco = document.querySelector('#endereco')
+    const complemento = document.querySelector('#complemento')
+    const bairro = document.querySelector('#bairro')
+    const cidade = document.querySelector('#cidade')
+    const estado = document.querySelector('#estado')
+    const mensagemErro = document.querySelector('#erro')
+    
+    if (dados instanceof Error) {
+        console.log(dados)
+        mensagemErro.innerHTML = 'CEP inválido. Tente novamente!'
 
+        endereco.value = ''
+        complemento.value = ''
+        bairro.value = ''
+        cidade.value = ''
+        return
+    }
+
+    mensagemErro.innerHTML = ''
+    
+    endereco.value = dados.logradouro
     complemento.value = dados.complemento
     bairro.value = dados.bairro
     cidade.value = dados.localidade
+    estado.value = dados.uf
 }
-
-
-
-
-// console.log(endereco)
-// console.log(numero)
-// console.log(complemento)
-// console.log(bairro)
-// console.log(cidade)
-// console.log(estado)
