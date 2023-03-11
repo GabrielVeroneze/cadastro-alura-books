@@ -2,7 +2,7 @@
 
 <hr>
 
-<p align="center"> <img src="https://github.com/GabrielVeroneze/cadastro-alura-books/blob/33500871b3eee4f2b2a1cdef8abc2790617669bf/assets/img/Logo.svg" alt="Logo da alura books"> </p>
+<p align="center"> <img src="https://github.com/GabrielVeroneze/cadastro-alura-books/blob/33500871b3eee4f2b2a1cdef8abc2790617669bf/assets/img/Logo.svg" alt="Logo da AluraBooks"> </p>
 <p align="center">Um formulário de cadastro da plataforma AluraBooks, uma livraria on-line que vende livros técnicos. Nesse formulário implementamos o auto preenchimento de informações do endereço através do valor do CEP inserido pelo usuário.</p>
 
 ## Tecnologias utilizadas durante o curso
